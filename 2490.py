@@ -7,8 +7,9 @@ while True:
     for i in range(len(yut)):
         if yut[i] == 0:
             yutNumber = yutNumber + 1
+            
 
-    yutStr = ["모", "도", "개", "걸", "윷"]
+    yutStr = ["E", "A", "B", "C", "D"]
     print(yutStr[yutNumber])
     d = d+1
     
