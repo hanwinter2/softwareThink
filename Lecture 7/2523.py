@@ -1,0 +1,15 @@
+s = int(input())
+
+string = ''
+
+for i in range(1, s+1):
+    string = ''
+    for j in range(1, i+1):
+        string = string + "*"
+    print(string)
+
+for i in range(1, s):
+    string = ''
+    for j in range(1, s-i+1):
+        string = string + "*"
+    print(string)
