@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from collections import Counter
 
 limit, students = input().split()
@@ -21,3 +22,28 @@ orderList.sort()
 
 for i in range(min(limit, len(orderList))):
     print(orderList[i][1])
+=======
+import sys
+
+input = sys.stdin.readline
+
+limit, students = map(int, input().split())
+
+studentsDic = {}
+for i in range(students):
+    studentId = input().strip()
+    studentsDic[studentId] = i
+
+orderList = []
+for studentId, order in studentsDic.items():
+    orderList.append((order, studentId))
+
+orderList.sort()
+
+count = 0
+for order, studentId in orderList:
+    if count == limit:
+        break
+    print(studentId)
+    count += 1
+>>>>>>> 51b4b3231624a70aeafefa2d1f54553237b3aaa6
