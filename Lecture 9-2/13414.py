@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from collections import Counter
 
 limit, students = input().split()
